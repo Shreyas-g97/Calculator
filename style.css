@@ -25,6 +25,11 @@ button {
     margin: 5px;
 }
 
+button:hover{
+    background-color: crimson;
+    color: white;
+}
+
 #result {
     display: flex;
     height: 40px;
