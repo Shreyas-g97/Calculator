@@ -1,0 +1,36 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    color: lightblue;
+    background-color: teal;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+#calc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+button {
+    width: 30%;
+    padding: 20px;
+    background-color: floralwhite;
+    color: black;
+    font-size: large;
+    margin: 5px;
+}
+
+#result {
+    display: flex;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    font-size: large;
+    color: black;
+    justify-content: center;
+}
