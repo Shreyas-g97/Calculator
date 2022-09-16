@@ -2,7 +2,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    background-color: darkslategrey;
+    background-color: #3d295c;
 }
 
 .calculator-grid{
@@ -41,10 +41,14 @@ button:hover{
     align-items: flex-end;
     padding: 20px;
     justify-content: right;
+    flex-wrap: wrap;
 }
 
 .previous-operand, .current-operand {
+    position: relative;
+    min-width: 0;
     background-color: black;
     color: white;
-    font-size: larger;
+    font-size: x-large;
+    overflow: hidden;
 }
