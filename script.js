@@ -18,7 +18,12 @@ function divide(a, b){
     console.log(result);
 }
 
-add(1, 3);
-subtract(1, 3);
-multiply(1, 3);
-divide(1, 3);
+let userInput = "";
+
+function firstValue(a){
+    userInput += a;
+    console.log(userInput);
+}
+
+document.getElementById('1').addEventListener('click', firstValue("1"));
+document.getElementById('2').addEventListener('click', firstValue("2"));

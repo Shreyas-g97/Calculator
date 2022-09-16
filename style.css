@@ -1,41 +1,50 @@
-*{
-    font-family: 'Times New Roman', Times, serif;
-    color: lightblue;
-    background-color: teal;
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: darkslategrey;
 }
 
-h1 {
-    display: flex;
+.calculator-grid{
+    display: grid;
     justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
 }
 
-#calc {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
-button {
-    width: 30%;
-    padding: 20px;
-    background-color: floralwhite;
-    color: black;
+button{
     font-size: large;
-    margin: 5px;
+    border: 1px solid black;
+    outline: none;
+    background-color: ghostwhite;
+    min-width: 100px;
+    min-height: 100px;
 }
 
 button:hover{
-    background-color: crimson;
+    cursor: pointer;
+    background-color: black;
     color: white;
 }
 
-#result {
+.span-2 {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: black;
+    color: white;
     display: flex;
-    height: 40px;
-    background-color: white;
-    text-align: center;
-    font-size: large;
-    color: black;
-    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+    justify-content: right;
+}
+
+.previous-operand, .current-operand {
+    background-color: black;
+    color: white;
+    font-size: larger;
 }
